@@ -10,8 +10,19 @@ eventHub.addEventListener("click", e => {
         })
         eventHub.dispatchEvent(cE)
     }
-
 })
+
+eventHub.addEventListener("click", e => {
+    if (e.target.id === "foodTicket") {
+        const cE = new CustomEvent("foodTicketPurchased", {
+            detail: {
+                ticket: e.target.id
+            }
+        })
+        eventHub.dispatchEvent(cE);
+    }
+})
+
 
 export const TicketBooth = () => {
     contentTarget.innerHTML = `
