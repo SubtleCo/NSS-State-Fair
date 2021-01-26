@@ -20,6 +20,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .ticketBooth {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .attractions {
@@ -42,6 +44,7 @@ h1,h2,h3,h4,h5,h6 {
     flex-wrap: wrap;
     height: 25rem;
 }
+
 
 .person {
     height: 1rem;
