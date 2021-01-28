@@ -53,11 +53,8 @@ eventHub.addEventListener("click", e => {
             }
         })
         eventHub.dispatchEvent(cE);
-        console.log("FPTicket dispatched")
     }
 })
-
-
 
 export const TicketBooth = () => {
     contentTarget.innerHTML = `
